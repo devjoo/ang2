@@ -70,7 +70,14 @@ D:\ts2\works\test>git remote add origin https://github.com/devjoo/ang2.git
 IOC, DI 개념 알아오기
 
 
-   
+```
+D:\ts2\works\test3>git init
+Initialized empty Git repository in D:/ts2/works/test3/.git/
+
+D:\ts2\works\test3>git remote add origin https://github.com/ParkKyoungHun/ang2.git
+
+D:\ts2\works\test3>git pull origin master
+```
 
 CTRL+ Shift + b
 tasks.json 
