@@ -66,10 +66,21 @@ Initialized empty Git repository in D:/ts2/works/test/.git/
 ```
 D:\ts2\works\test>git remote add origin https://github.com/devjoo/ang2.git
 ```
+6. git add, commit
+```
+D:\ts2\works\test>git add *
+​
+D:\ts2\works\test>git commit -m "init project"
+```
+7. git push
+```
+D:\ts2\works\test>git push origin master
+remote: Permission to devjoo/ang2.git denied to jinahchoi.
+fatal: unable to access 'https://github.com/devjoo/ang2.git/': The requested URL returned error: 403
+D:\ts2\works\test>git config user.email "leejiwoo28@naver.com"
+```
 
-IOC, DI 개념 알아오기
-
-
+### 
 ```
 D:\ts2\works\test3>git init
 Initialized empty Git repository in D:/ts2/works/test3/.git/
@@ -81,3 +92,8 @@ D:\ts2\works\test3>git pull origin master
 
 CTRL+ Shift + b
 tasks.json 
+
+
+
+
+##IOC, DI 개념 알아오기
