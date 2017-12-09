@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>두번째 테스트</title>
 <script>
+var cnt = 0;
 function makeHtml(){
     var divObj = document.getElementById('test');
 
@@ -20,7 +21,20 @@ function makeHtml(){
 }
 
 function cl(obj){
-    alert(obj.innerHTML);
+    
+    var text = obj.innerHTML;
+    var idx = text.indexOf('=');
+    if(idx == -1) {
+        return;
+    }
+    cnt++;
+    text = text.substring(idx+1);
+
+    if(cnt == text){
+        obj.innerHTML = '당첨';
+    }else{
+        obj.innerHTML = '꽝';
+    }
 }
 </script>
 </head>
