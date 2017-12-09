@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>세번째 테스트</title>
+
+</head>
+<body>
+<div id="test1" data-id="tt1"></div>
+<div id="test2" data-id="tt2"></div>
+<div id="test3" data-id="tt3"></div>
+    
+<script>
+for(var i = 1; i <=3; i++){
+    var divObj = document.getElementById('test' + i);
+    alert(divObj.getAttribute('data-id'));
+}
+</script>
+</body>
+</html>
