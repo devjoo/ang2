@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>두번째 테스트</title>
+<script>
+function makeHtml(){
+    var divObj = document.getElementById('test');
+
+    var str = '<table border="1">';
+    for(var i = 1; i < 10; i++){
+        str += '    <tr>';
+        for(var j = 1; j < 10; j++){
+            str += '<td onclick="cl(this)">' + i + 'x' + j + '=' + ( i*j) + '</td>'; //괄호는 문자와 숫자를 더하면 연산 안되어서 추가
+        }
+        str += '   </tr>';
+    }
+    str += '</table>';
+    divObj.innerHTML = str;  // 도큐멘트 전체를 새로 랜더링 해서 성능이 안좋아진다
+}
+
+function cl(obj){
+    alert(obj.innerHTML);
+}
+</script>
+</head>
+<body onload="makeHtml()">
+    <div id="test"></div>
+
+
+</body>
+</html>
